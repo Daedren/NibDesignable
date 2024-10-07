@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
@@ -10,10 +10,6 @@ let package = Package(
         .library(name: "NibDesignable", targets: ["NibDesignable"])
     ],
     targets: [
-        .target(
-            name: "NibDesignable",
-            path: "NibDesignable"
-        )
-    ],
-    swiftLanguageVersions: [.v5]
+        .target(name: "NibDesignable")
+    ]
 )
